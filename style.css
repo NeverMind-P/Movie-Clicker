@@ -2,19 +2,43 @@
     margin: 0;
     padding: 0;
     text-shadow: white 0 0 4px;
+    color:white;
 }
 body{
-    background-color: #808080;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: linear-gradient( 0deg, rgb(32, 32, 32), rgb(71, 68, 68) );
 }
 header{
-    display: flex;
-    justify-content: left;
+    position: relative;
 }
-header > h1 {
-    text-align: center;
-    display: inline;
-    font-size: 76px;
+header > a {
+    font-size: 36px;
+    color: black;
+    position: absolute;
+    right: 80px;
+    top: 20px;
+}
+i{
+    color: black;
+}
+.telegram {
+    right: 145px;
+}
+.android {
+    right: 210px;
+}
+.git {
+    right: 275px;
+}
+.google {
+    right: 340px
+}
+.h1{
+    display: flex;
+    justify-content: center;
+}
+.h1 > h1 {
+    font-size: 66px;
 }
 header > img {
     width: 76px;
@@ -22,16 +46,26 @@ header > img {
     margin-right: 70px;
 }
 .main-content{
-    overflow-x:hidden;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
 }
-.left-content > h5 {
-    margin-top: 25px;
-    padding: 25px;
+.center-content > h5 {
     font-size:50px;
 }
-.left-content > p {
+.center-content > p {
     padding: 25px;
     font-size: 20px;
 }   
+.white-block{
+    margin-top: 25px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20%;
+    background-color: white;
+}
+footer > a{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
